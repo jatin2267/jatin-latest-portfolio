@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jatin Sharma — Frontend Developer & UI/UX Designer. Building responsive, performance-focused websites with 90+ Lighthouse scores and clean interfaces built from Figma."
+    />
+    <title>Jatin Sharma · Frontend Developer & UI/UX Designer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dark-mode">
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-ring"></div>
+    </div>
+
+    <!-- DARK MODE TOGGLE -->
+    <button class="dark-toggle" id="darkToggle" title="Toggle dark mode">
+      <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="hero-particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Open For Work · Frontend Developer
+          </div>
+
+          <h1 class="hero-title">
+            I build<br />
+            <span class="highlight">responsive</span><br />
+            <span class="highlight">web experiences</span>
+          </h1>
+
+          <p class="hero-sub">
+            Jatin Sharma · Frontend Developer &amp; UI/UX Designer crafting
+            pixel-perfect, performance-focused websites — clean interfaces
+            built from Figma, shipped with 90+ Lighthouse scores.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Let's Talk
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="7">0</div>
+              <div class="stat-label">Live Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="90">0</div>
+              <div class="stat-label">Lighthouse Score</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="1">0</div>
+              <div class="stat-label">Years Exp.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="10">0</div>
+              <div class="stat-label">Figma Conversions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="scroll-indicator"
+        onclick="
+          document
+            .getElementById('about')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        <div class="mouse"><div class="wheel"></div></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="bg-alt">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image"></div>
+          <div>
+            <span class="tagline">About me</span>
+            <h2 class="section-title">Code with <span>purpose</span></h2>
+            <p class="about-lead">
+              I'm Jatin — a Frontend Developer and UI Designer with 1+ years of
+              hands-on experience building responsive, performance-focused
+              websites. Skilled in solving frontend challenges — mobile layout
+              issues, animation performance, and page-speed optimization —
+              without compromising design quality.
+            </p>
+            <p class="about-text">
+              Delivered 7+ live projects with 90+ Lighthouse scores and clean
+              interfaces built from Figma. Familiar with PHP, basic API
+              integration, and database connectivity.
+            </p>
+            <div class="about-info">
+              <div>
+                <h4 class="accent-heading">📍 Location</h4>
+                <p>Ludhiana, Punjab, India</p>
+              </div>
+              <div>
+                <h4 class="accent-heading">🌍 Available</h4>
+                <p>Ludhiana · Remote</p>
+              </div>
+              <div>
+                <h4 class="accent-heading">⚡ Expertise</h4>
+                <p>Frontend · UI/UX · Figma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="bg-primary">
+      <div class="container">
+        <div class="section-head">
+          <span class="tagline">Career</span>
+          <h2 class="section-title">Professional <span>Experience</span></h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Exp 1: Coding Gang -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-card">
+              <h3>Coding Gang</h3>
+              <div class="role">
+                <i class="fas fa-briefcase"></i> Frontend Developer · Ludhiana
+              </div>
+              <div>
+                <span class="period">
+                  <i class="fas fa-calendar"></i> Feb 2026 – Apr 2026
+                </span>
+              </div>
+              <ul>
+                <li>
+                  Built 4+ websites from Figma designs to final handoff,
+                  maintaining pixel-accurate layouts across mobile, tablet, and
+                  desktop.
+                </li>
+                <li>
+                  Added GSAP/AOS animations across 4+ projects with careful
+                  attention to timing and easing — ensuring motion felt
+                  intentional, not decorative.
+                </li>
+                <li>
+                  Caught and fixed layout breakpoints, spacing inconsistencies,
+                  and animation glitches during QA before delivery — zero
+                  post-handoff revision requests.
+                </li>
+                <li>
+                  Worked directly in a fast-paced agency environment, meeting
+                  100% of project deadlines.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Exp 2: W3WC -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-card">
+              <h3>W3WC (Agency)</h3>
+              <div class="role">
+                <i class="fas fa-laptop-code"></i> Frontend Developer Intern
+              </div>
+              <div>
+                <span class="period">
+                  <i class="fas fa-calendar"></i> Jul 2025 – Dec 2025
+                </span>
+              </div>
+              <ul>
+                <li>
+                  Converted 10+ Figma wireframes into responsive web pages
+                  using HTML5, CSS3, and JavaScript.
+                </li>
+                <li>
+                  Boosted agency portfolio Lighthouse score 60→90+ using image
+                  compression, lazy loading, and performance fixes.
+                </li>
+                <li>
+                  Fixed 20+ layout/browser bugs across 5+ projects, browser
+                  compatibility bugs, and UI inconsistencies across screen
+                  sizes.
+                </li>
+                <li>
+                  Worked with a 5-member team using Git and GitHub in a
+                  sprint-based workflow.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Exp 3: Freelance -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-card">
+              <h3>Freelance Web Designer &amp; Frontend Developer</h3>
+              <div class="role">
+                <i class="fas fa-user-tie"></i> Multiple Clients
+              </div>
+              <div>
+                <span class="period">
+                  <i class="fas fa-calendar"></i> 2025 – Present
+                </span>
+              </div>
+              <ul>
+                <li>
+                  Designed and built 3+ corporate websites independently — from
+                  client brief and Figma design to final deployment.
+                </li>
+                <li>
+                  Used HTML5, CSS3, JavaScript, and Bootstrap to build
+                  mobile-first layouts — clients came back for repeat work.
+                </li>
+                <li>
+                  Grew client base by 2x through referrals only — no paid
+                  outreach, just on-time delivery and clear communication.
+                </li>
+                <li>
+                  Optimized assets and fixed cross-browser issues to improve
+                  page-load performance across all projects.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="bg-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="tagline">Portfolio</span>
+          <h2 class="section-title">My <span>Projects</span></h2>
+          <p class="section-desc">
+            A selection of responsive, performance-focused websites built with
+            clean code, smooth animations, and pixel-accurate design.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 1: Personal Portfolio Website -->
+          <div class="project-card fade-up">
+            <div class="project-image project-image-photo">
+              <img
+                class="project-image-full"
+                src=""
+                alt="Personal Portfolio Website screenshot"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-image-overlay"></div>
+              <div class="brand-logo">
+                <i class="fas fa-laptop-code logo-icon"></i>
+                <div class="logo-name">PORTFOLIO</div>
+                <div class="logo-tagline">Personal Portfolio Website</div>
+                <div class="brand-details">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>GSAP</span>
+                </div>
+                <div class="logo-badge">⭐ Live · 95+ Lighthouse</div>
+              </div>
+              <button
+                class="preview-btn"
+                onclick="openPreview('', 'PORTFOLIO', 'Personal Portfolio Website')"
+              >
+                <i class="fas fa-eye"></i> Preview
+              </button>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Development</span>
+              <h4>Personal Portfolio Website</h4>
+              <p class="project-desc">
+                Fully responsive site with smooth GSAP animations, scoring 95+
+                on Lighthouse. Built with HTML5, CSS3, JavaScript, and GSAP.
+              </p>
+              <div class="project-meta">
+                <span><i class="fas fa-calendar"></i> 2026</span>
+                <span><i class="fas fa-tag"></i> HTML5 · CSS3 · JS · GSAP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Corporate Website -->
+          <div class="project-card fade-up">
+            <div class="project-image project-image-photo">
+              <img
+                class="project-image-full"
+                src=""
+                alt="Corporate website screenshot"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-image-overlay"></div>
+              <div class="brand-logo">
+                <i class="fas fa-building logo-icon"></i>
+                <div class="logo-name">CORPORATE</div>
+                <div class="logo-tagline">Business Website</div>
+                <div class="brand-details">
+                  <span>Bootstrap 5</span>
+                  <span>AOS</span>
+                  <span>Responsive</span>
+                </div>
+                <div class="logo-badge">🌐 Live Website</div>
+              </div>
+              <button
+                class="preview-btn"
+                onclick="openPreview('', 'CORPORATE', '6-Section Business Website')"
+              >
+                <i class="fas fa-eye"></i> Preview
+              </button>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Development</span>
+              <h4>Corporate Business Website</h4>
+              <p class="project-desc">
+                6-section business site built with Bootstrap 5 and AOS — scroll
+                animations and a responsive grid layout across all devices.
+              </p>
+              <div class="project-meta">
+                <span><i class="fas fa-calendar"></i> 2025</span>
+                <span><i class="fas fa-tag"></i> Bootstrap 5 · AOS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: W3WC School Website -->
+          <div class="project-card fade-up">
+            <div class="project-image project-image-photo">
+              <img
+                class="project-image-full"
+                src=""
+                alt="W3WC School website screenshot"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-image-overlay"></div>
+              <div class="brand-logo">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <div class="logo-name">W3WC</div>
+                <div class="logo-tagline">School Website</div>
+                <div class="brand-details">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="logo-badge">🎓 8-Page Site</div>
+              </div>
+              <button
+                class="preview-btn"
+                onclick="openPreview('', 'W3WC', '8-Page School Website')"
+              >
+                <i class="fas fa-eye"></i> Preview
+              </button>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Development</span>
+              <h4>W3WC School Website</h4>
+              <p class="project-desc">
+                8-page institutional site with clear navigation — finished
+                ahead of schedule and passed cross-browser QA. Built with
+                HTML5, CSS3, and JavaScript.
+              </p>
+              <div class="project-meta">
+                <span><i class="fas fa-calendar"></i> 2025</span>
+                <span><i class="fas fa-tag"></i> HTML5 · CSS3 · JS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Wildlife & Nature Website -->
+          <div class="project-card fade-up">
+            <div class="project-image project-image-photo">
+              <img
+                class="project-image-full"
+                src=""
+                alt="Wildlife and Nature website screenshot"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-image-overlay"></div>
+              <div class="brand-logo">
+                <i class="fas fa-leaf logo-icon"></i>
+                <div class="logo-name">WILDLIFE</div>
+                <div class="logo-tagline">Nature Themed Website</div>
+                <div class="brand-details">
+                  <span>CSS Grid</span>
+                  <span>Typography</span>
+                  <span>Galleries</span>
+                </div>
+                <div class="logo-badge">🌿 Live Website</div>
+              </div>
+              <button
+                class="preview-btn"
+                onclick="openPreview('', 'WILDLIFE', 'Nature Themed Website')"
+              >
+                <i class="fas fa-eye"></i> Preview
+              </button>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Development</span>
+              <h4>Wildlife &amp; Nature Website</h4>
+              <p class="project-desc">
+                Image-driven site with curated galleries and grid layouts —
+                built with CSS Grid and strong typography for a nature-themed
+                visual experience.
+              </p>
+              <div class="project-meta">
+                <span><i class="fas fa-calendar"></i> 2025</span>
+                <span><i class="fas fa-tag"></i> CSS Grid · Typography</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trusted By strip -->
+        <div class="trusted-strip fade-up">
+          <div class="trusted-title">
+            Brands &amp; clients I've collaborated with
+          </div>
+          <div class="trusted-grid">
+            <div class="trusted-logo">
+              <div class="logo-thumb">
+                <img src="studiodune.svg" alt="Studio Dune" loading="lazy" />
+              </div>
+              <span class="logo-word">STUDIO DUNE</span>
+            </div>
+            <div class="trusted-logo">
+              <div class="logo-thumb">
+                <img src="mossmarble.svg" alt="Moss & Marble" loading="lazy" />
+              </div>
+              <span class="logo-word">MOSS &amp; MARBLE</span>
+            </div>
+            <div class="trusted-logo">
+              <div class="logo-thumb">
+                <img src="reverie.svg" alt="Reverie" loading="lazy" />
+              </div>
+              <span class="logo-word">REVERIE</span>
+            </div>
+            <div class="trusted-logo">
+              <div class="logo-thumb">
+                <img src="atlas.svg" alt="Atlas" loading="lazy" />
+              </div>
+              <span class="logo-word">ATLAS</span>
+            </div>
+            <div class="trusted-logo">
+              <div class="logo-thumb">
+                <img src="nura.svg" alt="Nura" loading="lazy" />
+              </div>
+              <span class="logo-word">NURA</span>
+            </div>
+            <div class="trusted-logo">
+              <div class="logo-thumb">
+                <img src="fernweh.svg" alt="Fernweh" loading="lazy" />
+              </div>
+              <span class="logo-word">FERNWEH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="bg-primary">
+      <div class="container">
+        <div class="section-head">
+          <span class="tagline">Expertise</span>
+          <h2 class="section-title">Technical <span>Skills</span></h2>
+          <p class="section-desc">
+            Frontend, UI/UX, animation, and tools — everything needed to ship
+            fast, responsive, and beautiful websites.
+          </p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-item fade-up">
+            <i class="fas fa-code"></i>
+            <span class="skill-name">HTML5 &amp; CSS3</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fab fa-js-square"></i>
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fab fa-bootstrap"></i>
+            <span class="skill-name">Bootstrap</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-wind"></i>
+            <span class="skill-name">Tailwind CSS</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-atom"></i>
+            <span class="skill-name">React.js (Learning)</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fab fa-figma"></i>
+            <span class="skill-name">Figma</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-magic"></i>
+            <span class="skill-name">GSAP / AOS / Animations</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-search"></i>
+            <span class="skill-name">SEO</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 82%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-code-branch"></i>
+            <span class="skill-name">Git &amp; GitHub</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-plug"></i>
+            <span class="skill-name">REST API Integration</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-database"></i>
+            <span class="skill-name">MySQL &amp; PHP (Basic)</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-rocket"></i>
+            <span class="skill-name">Netlify &amp; Deployment</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="bg-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="tagline">What I do</span>
+          <h2 class="section-title">My <span>Services</span></h2>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p class="card-text">
+              Clean, semantic, and responsive websites built with HTML5, CSS3,
+              and JavaScript.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Responsive &amp; Mobile-First</h3>
+            <p class="card-text">
+              Pixel-perfect layouts that work beautifully across mobile,
+              tablet, and desktop.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-palette"></i></div>
+            <h3>UI/UX Design</h3>
+            <p class="card-text">
+              Wireframing, prototyping, and clean interfaces built from Figma
+              with strong typography and color theory.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-tachometer-alt"></i></div>
+            <h3>Performance Optimization</h3>
+            <p class="card-text">
+              Image compression, lazy loading, and speed fixes that push
+              Lighthouse scores to 90+.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-wand-magic-sparkles"></i></div>
+            <h3>Web Animations</h3>
+            <p class="card-text">
+              Intentional, smooth motion with GSAP, AOS, WOW.js, and Swiper.js
+              that elevates the experience.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-file-code"></i></div>
+            <h3>Figma to HTML</h3>
+            <p class="card-text">
+              Convert Figma wireframes and designs into responsive, accurate,
+              and production-ready code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section id="process" class="bg-primary">
+      <div class="container">
+        <div class="section-head">
+          <span class="tagline">How I work</span>
+          <h2 class="section-title">My <span>Process</span></h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step fade-up">
+            <div class="step-number">01</div>
+            <h4 class="accent-heading">Discover</h4>
+            <p>
+              Understanding goals, audience, brand, and requirements — so every
+              decision is purposeful from the start.
+            </p>
+          </div>
+          <div class="process-step fade-up">
+            <div class="step-number" style="color: #3498db">02</div>
+            <h4 style="color: #3498db">Design</h4>
+            <p>
+              Wireframes, mood boards, and Figma prototypes — mapping out
+              layout, typography, and interaction before a line of code.
+            </p>
+          </div>
+          <div class="process-step fade-up">
+            <div class="step-number">03</div>
+            <h4 class="accent-heading">Develop</h4>
+            <p>
+              Building responsive, clean, and semantic HTML/CSS/JS — with
+              smooth animations and cross-browser compatibility.
+            </p>
+          </div>
+          <div class="process-step fade-up">
+            <div class="step-number" style="color: #3498db">04</div>
+            <h4 style="color: #3498db">Deploy</h4>
+            <p>
+              Optimizing performance, testing across devices, and launching —
+              with ongoing support for growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & ADDITIONAL ===== -->
+    <section id="education" class="bg-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="tagline">Education &amp; More</span>
+          <h2 class="section-title">Beyond <span>Code</span></h2>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+            <h4>Bachelor of Computer Applications</h4>
+            <p>Kamla Lohtiya College, Ludhiana (Punjabi University)</p>
+            <div class="period">
+              <i class="fas fa-calendar"></i> 2023 – 2026
+            </div>
+          </div>
+          <div class="education-card fade-up">
+            <div class="icon-wrap"><i class="fas fa-video"></i></div>
+            <h4>Additional Skills</h4>
+            <p>
+              Basic video editing and content creation skills — useful for
+              agency and creative work.
+            </p>
+            <div class="extra-tags">
+              <span>🎬 Video Editing</span>
+              <span>🎨 Content Creation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-item fade-up">
+            <i class="fas fa-language"></i>
+            <span class="skill-name">Hindi</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-language"></i>
+            <span class="skill-name">Punjabi</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-language"></i>
+            <span class="skill-name">English</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-users"></i>
+            <span class="skill-name">Teamwork</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-clock"></i>
+            <span class="skill-name">Time Management</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-item fade-up">
+            <i class="fas fa-comments"></i>
+            <span class="skill-name">Communication</span>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 92%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="bg-primary">
+      <div class="container">
+        <div class="section-head">
+          <span class="tagline">Get in touch</span>
+          <h2 class="section-title">Let's work <span>together</span></h2>
+          <p class="section-desc">
+            Have a project in mind? Let's create something amazing.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <h3 class="contact-heading">
+              Let's talk about <span class="accent-heading">your project</span>
+            </h3>
+            <div class="contact-info-line">
+              <i class="fas fa-envelope"></i>
+              <p>
+                <a href="mailto:jatindevops8@gmail.com">
+                  jatindevops8@gmail.com
+                </a>
+              </p>
+            </div>
+            <div class="contact-info-line">
+              <i class="fas fa-phone-alt"></i>
+              <p><a href="tel:+917986129324">+91 79861 29324</a></p>
+            </div>
+            <div class="contact-info-line">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Ludhiana, Punjab, India</p>
+            </div>
+            <div class="social-links">
+              <a href="#" title="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Portfolio"><i class="fas fa-globe"></i></a>
+              <a href="mailto:jatindevops8@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <form class="contact-form" id="contactForm">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Email Address" required />
+              <input type="text" placeholder="What's your project about?" />
+              <textarea
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%"
+              >
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <p style="font-size: 1.2rem; margin-bottom: 0.5rem">
+          <i class="fas fa-heart heart"></i> Designed &amp; built with passion
+        </p>
+        <p style="opacity: 0.6">
+          © 2026 Jatin Sharma · Frontend Developer &amp; UI/UX Designer
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===== PREVIEW MODAL ===== -->
+    <div class="preview-modal" id="previewModal" onclick="closePreview(event)">
+      <div class="preview-modal-content" onclick="event.stopPropagation()">
+        <button class="preview-modal-close" onclick="closePreview()">
+          <i class="fas fa-times"></i>
+        </button>
+        <img id="previewModalImg" src="" alt="Project Preview" />
+        <div class="preview-modal-caption">
+          <h3 id="previewModalTitle">PORTFOLIO</h3>
+          <p id="previewModalSub">
+            Personal Portfolio Website · Web Project 2026
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="back-top" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
+

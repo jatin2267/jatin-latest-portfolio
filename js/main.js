@@ -1,7 +1,4 @@
-/* ============================================================
-   Jatin Sharma · Frontend Developer & UI/UX Designer
-   Main JavaScript
-   ============================================================ */
+
 
 (function () {
   "use strict";
@@ -11,6 +8,62 @@
     var loader = document.getElementById("loader");
     if (loader) loader.classList.add("hidden");
   });
+
+  const navbar = document.getElementById("navbar");
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  function updateNavbar() {
+    if (navbar) {
+      navbar.classList.toggle("scrolled", window.scrollY > 40);
+    }
+  }
+  window.addEventListener("scroll", updateNavbar);
+  updateNavbar();
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("open");
+      navToggle.classList.toggle("active");
+    });
+
+    navMenu.querySelectorAll(".nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navMenu.classList.remove("open");
+        navToggle.classList.remove("active");
+      });
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 768) {
+        navMenu.classList.remove("open");
+        navToggle.classList.remove("active");
+      }
+    });
+  }
+
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-menu .nav-link");
+
+  function highlightNav() {
+    let currentId = "";
+    const scrollPos = window.scrollY + 120;
+
+    sections.forEach(function (section) {
+      if (scrollPos >= section.offsetTop) {
+        currentId = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(function (link) {
+      link.classList.toggle(
+        "active",
+        link.getAttribute("href") === "#" + currentId,
+      );
+    });
+  }
+  window.addEventListener("scroll", highlightNav);
+  highlightNav();
 
   // ===== DARK MODE =====
   const darkToggle = document.getElementById("darkToggle");
